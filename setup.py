@@ -4,7 +4,7 @@ setup(
     name='expressvpn-python',
     version='1.1',
     packages=['expressvpn'],
-    install_requires=['flask','flask_restful'],
+    install_requires=['Flask','flask_restful'],
     url='https://github.com/philipperemy/expressvpn-python',
     license='MIT',
     author='Philippe Remy',

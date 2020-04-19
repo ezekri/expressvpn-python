@@ -1,10 +1,8 @@
-# ExpressVPN - Python Wrapper (LINUX)
+# ExpressVPN - Python Wrapper and Rest API (LINUX)
 
 Full bash documentation: [https://www.expressvpn.com/support/vpn-setup/app-for-linux/](https://www.expressvpn.com/support/vpn-setup/app-for-linux/)
 
-<div align="center">
-  <img src="https://smhttp-ssl-23575.nexcesscdn.net/80ABE1/sflashrouters/media/catalog/category/expressvpn-700px2.png" width="300"><br><br>
-</div>
+Fork purpose : add a RestFul web service using pyhton library 
 
 ## Installation with PyPI
 
@@ -132,3 +130,19 @@ def change_ip():
             logging.error(e)
             logging.error('Skipping exception.')
  ```
+
+## Use of web service
+Add this line to /etc/rc.local to enable service auto start:
+```bash
+/usr/bin/python /home/user/EXPRESSVPN-PYTHON-PATH/expressvpn/piexpressweb.py &
+```
+
+You can use Rest API client, e.g : Postman or one of the many existing mobile apps
+I'm using Android app named : Advanced Rest API client. These sceenshots are coming from this app:
+
+<img src="https://github.com/ezekri/expressvpn-python/blob/master/Screenshot1.jpg" width="50%" height="50%">
+<img src="https://github.com/ezekri/expressvpn-python/blob/master/Screenshot2.jpg" width="50%" height="50%">
+
+
+
+

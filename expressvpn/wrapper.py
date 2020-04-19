@@ -33,6 +33,9 @@ def disconnect():
     return run_command(VPN_DISCONNECT)
 
 
+def status():
+    return run_command(VPN_STATUS)
+
 def is_activated(connect_output):
     return not check_if_string_is_in_output(connect_output, 'Please activate your account')
 

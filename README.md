@@ -9,7 +9,7 @@ Fork purpose : add a RestFul web service using pyhton library
 If the command `expressvpn` is already installed on your Ubuntu then just run this:
 
 ```
-pip install expressvpn-python
+sudo python setup.py install
 ```
 
 ## Download/Install the package on the official website
@@ -18,7 +18,7 @@ The package DEB for Ubuntu 64bits 2.3.4 is already part of the repository. For a
 [https://www.expressvpn.com/support/vpn-setup/app-for-linux/#download](https://www.expressvpn.com/support/vpn-setup/app-for-linux/#download)
 
 ```bash
-git clone git@github.com:philipperemy/expressvpn-python.git evpn && cd evpn
+git clone git@github.com:ezekri/expressvpn-python.git evpn && cd evpn
 sudo dpkg -i expressvpn_2.3.4-1_amd64.deb # will install the binaries provided by ExpressVPN
 sudo pip install . # will install it as a package. Or install it within a virtualenv (better option).
 ```
